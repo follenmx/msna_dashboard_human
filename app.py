@@ -93,7 +93,7 @@ df_query = (
     "`What is your citizenship?`.isin(@nationality_filter) & "
     "`What is your current status (e.g., refugee, asylum seeker, etc.)?`.isin(@legal_filter) & "
     "`Please specify what ethnic minority group`.isin(@ethnic_filter) & "
-    "`Do you currently live in a city or a village?`.isin(@accomodation_filter)"
+    "`Do you currently live in a city or a village?`.isin(@accomodation_filter) & "
     "`How long have you been in the Republic of Moldova?`.isin(@duration_stay_filter)"
 )
 df = df.query(df_query)
