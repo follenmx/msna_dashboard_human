@@ -64,6 +64,11 @@ with st.sidebar:
         options=df["Do you currently live in a city or a village?"].unique(),
         default=df["Do you currently live in a city or a village?"].unique(),
     )
+    duration_stay_filter = st.multiselect(
+        "Please select the duration of stay in Moldova",
+        options=df["How long have you been in the Republic of Moldova?"].unique(),
+        default=df["How long have you been in the Republic of Moldova?"].unique(),
+    )
     st.markdown("---")
     st.header("Actions")
     button_col1, button_col2 = st.columns(2)
@@ -89,6 +94,7 @@ df_query = (
     "`What is your current status (e.g., refugee, asylum seeker, etc.)?`.isin(@legal_filter) & "
     "`Please specify what ethnic minority group`.isin(@ethnic_filter) & "
     "`Do you currently live in a city or a village?`.isin(@accomodation_filter)"
+    "`How long have you been in the Republic of Moldova?`.isin(@duration_stay_filter)"
 )
 df = df.query(df_query)
 if df.empty:
