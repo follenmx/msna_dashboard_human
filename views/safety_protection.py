@@ -130,7 +130,7 @@ safety_concern_options = [
     "Limited access to health services",
     "Prefer not to say",
     "Other (please specify)",
-    "None"
+    "No"
 ]
 safety_concern_bar_chart = create_mbar_chart(
     df,
@@ -139,7 +139,6 @@ safety_concern_bar_chart = create_mbar_chart(
     "Safety and Security Concerns",
 )
 st.plotly_chart(safety_concern_bar_chart)
-st.warning("The chart is incorrectly displaying the value for the 'None' option as 0. The correct value for 'None' is 469. We are currently investigating the issue and working on a solution.")
 st.markdown("---")
 # Support Systems for Safety Concerns
 safety_support_options = [
