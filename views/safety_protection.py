@@ -131,7 +131,7 @@ safety_concern_options = [
     "Unsafe living conditions",
     "Limited access to health services",
     "Prefer not to say",
-    "Other (please specify)",
+    "Other (please specify)"
 ]
 safety_concern_bar_chart = create_mbar_chart(
     df,
