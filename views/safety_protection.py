@@ -121,7 +121,6 @@ with col6:
 
 st.markdown("---")
 st.header("Safety and Protection")
-
 # Safety and Security Concerns
 safety_concern_options = [
     "Physical threats or violence",
@@ -140,7 +139,8 @@ safety_concern_bar_chart = create_mbar_chart(
     "Safety and Security Concerns",
 )
 st.plotly_chart(safety_concern_bar_chart)
-
+st.warning("The chart is incorrectly displaying the value for the 'None' option as 0. The correct value for 'None' is 469. We are currently investigating the issue and working on a solution.")
+st.markdown("---")
 # Support Systems for Safety Concerns
 safety_support_options = [
     "Police",
