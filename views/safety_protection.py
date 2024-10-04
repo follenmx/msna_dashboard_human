@@ -124,14 +124,14 @@ st.header("Safety and Protection")
 
 # Safety and Security Concerns
 safety_concern_options = [
-    "None",
     "Physical threats or violence",
     "Verbal harassment or intimidation",
     "Theft or robbery",
     "Unsafe living conditions",
     "Limited access to health services",
     "Prefer not to say",
-    "Other (please specify)"
+    "Other (please specify)",
+    "None"
 ]
 safety_concern_bar_chart = create_mbar_chart(
     df,
